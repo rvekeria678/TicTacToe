@@ -67,7 +67,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx tailwind -i ./src/input.css -o ./dist/output.css --watch"
+    "start": "npx tailwind -i ./src/css/input.css -o ./dist/output.css --watch"
   },
   "keywords": [],
   "author": "",
