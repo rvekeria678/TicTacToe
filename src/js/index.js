@@ -7,11 +7,12 @@ tiles.forEach((el)=>{
         value = Number(event.target.getAttribute('name'));
         if (board[value] === undefined) {
             board[value] = Number(control);
-            el.style.backgroundImage = control ? "url('../assets/images/o.png')" : "url('../assets/images/o.png')"
+            //el.style.backgroundImage = control ? "url('../assets/images/o.png')" : "url('../assets/images/o.png')"
             control = control ? false : true;
         }
         console.log(board);
     });
+    el.style.backgroundImage = "url(../images/o.png)";
 });
 function checkBoardState(e_val) {
     switch(e_val) {
@@ -36,9 +37,3 @@ function checkBoardState(e_val) {
             break;
     }
 }
-
-const l1 = 0, l2 = 1;
-
-const var1 = l2 || l1;
-
-console.log(var1);
