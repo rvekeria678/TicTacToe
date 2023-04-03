@@ -11,10 +11,9 @@
     <div id="content--wrapper">
         <h1 class="text-center text-4xl font-semibold my-3">Tic Tac Toe</h1>
         <div class="flex justify-center my-8">
-            <button class="border rounded text-2xl mx-2 px-7">Start</button>
-            <button class="border rounded text-2xl mx-2 px-7">Reset</button>
+            <button class="border rounded text-2xl mx-2 px-7" id="reset">Reset</button>
         </div>
-        <div class="grid grid-cols-11 grid-row-14 w-72 h-72 mx-auto border">
+        <div class="grid grid-cols-11 grid-row-14 w-72 h-72 mx-auto border" id="board">
             <div class="col-span-3 row-span-3 tile" name="0"></div>
             <div class="bg-black row-span-3"></div>
             <div class="col-span-3 row-span-3 tile" name="1"></div>
@@ -37,6 +36,7 @@
             <div class="bg-black row-span-3"></div>
             <div class="col-span-3 row-span-3 tile" name="8"></div>    
         </div>
+        <div class="text-3xl text-center m-6 font-semibold" id="game-msg"></div>
     </div>
     <script src="./src/js/index.js"></script>
 </body>
